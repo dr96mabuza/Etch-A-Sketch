@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    border: 3px;
+    border-color: beige;
+    border-style: solid;
+    
+    /*sets the span(s) into a grid*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+span {
+    /*sets div(s) inside each span into a grid*/ 
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+}
+
+span :hover {
+    background-color: black;
+}
