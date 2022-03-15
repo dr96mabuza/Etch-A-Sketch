@@ -3,12 +3,14 @@ function grid(num) {
     for (let i = 0; i < num; i++) {
 
         const span = document.createElement('span');
+        span.style.gridAutoFlow = 'column'; //span are placed in columns
         content.appendChild(span);
 
         for (let j = 0; j < num; j++){
             
             const div = document.createElement('div');
             div.classList.add('grid');
+            div.style.gridAutoColumns = '600px/num'; //divs are made equal and placed in rows
             div.addEventListener('click', () => {
                 div.style.cssText = 'background-color: black';
             });

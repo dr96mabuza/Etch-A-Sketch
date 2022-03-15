@@ -6,21 +6,19 @@ body {
 }
 
 #container {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border: 3px;
     border-color: beige;
     border-style: solid;
     
     /*sets the span(s) into a grid*/
     display: grid;
-    grid-template-columns: auto auto auto auto;
 }
 
 span {
     /*sets div(s) inside each span into a grid*/ 
     display: grid; 
-    grid-template-columns: auto auto auto auto;
 }
 
 span :hover {
